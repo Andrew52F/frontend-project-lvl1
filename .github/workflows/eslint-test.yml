@@ -10,4 +10,4 @@ jobs:
     steps:
     
     - name: linting
-      run: npx eslint .
+      run: npx eslint --no-error-on-unmatched-pattern .
