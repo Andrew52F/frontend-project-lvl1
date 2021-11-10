@@ -1,0 +1,13 @@
+name: ESLint-test
+
+on: [push]
+
+jobs:
+  my-testing:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    
+    - name: linting
+      run: make lint
