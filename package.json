@@ -9,7 +9,8 @@
     "brain-even": "bin/brain-even.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "updateLink": "npm rm frontend-project-lvl1 -g && npm link"
   },
   "repository": {
     "type": "git",
