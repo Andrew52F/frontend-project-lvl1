@@ -2,7 +2,7 @@
 
 import { greetings, name } from './../src/cli.js';
 import gameRules from './../index.js';
-import { rule, questions, corrects } from './../src/games/even-game.js';
+import { rule, questions, corrects } from './../src/games/calc-game.js';
 
 greetings();
 gameRules(questions, corrects, rule, name);
