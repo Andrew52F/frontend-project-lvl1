@@ -1,4 +1,5 @@
 import readlineSync from 'readline-sync';
+
 const gameRules = (questions, corrects, rule, name) => {
   console.log(rule);
   let i = 0;

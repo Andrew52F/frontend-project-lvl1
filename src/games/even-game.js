@@ -1,4 +1,5 @@
-import getRandomInt from './../../random-num.js';
+import getRandomInt from '../random-num.js';
+
 const rule = 'Answer "yes" if the number is even, otherwise answer "no".';
 const questions = [];
 const corrects = [];

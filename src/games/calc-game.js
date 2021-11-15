@@ -1,4 +1,5 @@
-import getRandomInt from './../../random-num.js';
+import getRandomInt from '../random-num.js';
+
 const rule = 'What is the result of the expression?';
 const questions = [];
 const corrects = [];
