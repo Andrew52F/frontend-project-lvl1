@@ -1,4 +1,5 @@
-import getRandomInt from './../../random-num.js';
+import getRandomInt from '../random-num.js';
+
 const rule = 'Find the greatest common divisor of given numbers.';
 const questions = [];
 const corrects = [];
