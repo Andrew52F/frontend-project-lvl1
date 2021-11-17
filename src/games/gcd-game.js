@@ -34,8 +34,4 @@ for (let i = 0; i < 3; i += 1) {
   corrects.push(String(getGcd(bigger, smaller)));
 }
 
-export {
-  rule,
-  questions,
-  corrects
-};
+export { rule, questions, corrects };

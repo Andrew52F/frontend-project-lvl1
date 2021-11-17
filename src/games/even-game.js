@@ -8,6 +8,4 @@ for (let i = 0; i < 3; i += 1) {
   questions.push(number);
   corrects.push((number % 2 === 0) ? 'yes' : 'no');
 }
-export {
-  rule, questions, corrects
-};
+export { rule, questions, corrects };

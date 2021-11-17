@@ -15,6 +15,4 @@ for (let i = 0; i < 3; i += 1) {
   }
   corrects.push((mark) ? 'yes' : 'no');
 }
-export {
-  rule, questions, corrects
-};
+export { rule, questions, corrects };

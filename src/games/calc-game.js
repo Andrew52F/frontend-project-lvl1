@@ -21,6 +21,4 @@ for (let i = 0; i < 3; i += 1) {
       break;
   }
 }
-export {
-  rule, questions, corrects
-};
+export { rule, questions, corrects };
