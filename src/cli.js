@@ -8,4 +8,4 @@ const greetings = () => {
   return name;
 };
 
-export { greetings };
+export default greetings;
