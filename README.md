@@ -3,44 +3,49 @@
 <a href="https://codeclimate.com/github/codeclimate/codeclimate/maintainability"><img src="https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability" /></a>
 ![example workflow](https://github.com/Difuster/frontend-project-lvl1/actions/workflows/linter.yml/badge.svg)
 
-На этом репозитории располагается первый учебный проект на JavaScript - "Игры разума".<br>
-Цель данного проекта: разобраться в основах создания Node.js приложений.
+На этом репозитории располагается первый учебный проект на JavaScript - <b>"Игры разума"</b>.<br>
+<b>Цель данного проекта:</b> разобраться в основах создания Node.js приложений.<br>
+<br>
+<h3><b>Список игр:</b></h3>
+1. brain-even<br>
+2. brain-calc<br>
+3. brain-gcd<br>
+4. brain-progression<br>
+5. brain-prime<br>
+<br>
+<h3><b>Процесс установки:</b></h3>
+1. Установите Node.js<br>
+2. Скопируйте файлы с репозитория в удобное место.<br>
+3. Установите зависимости проекта консольной командой: make install<br>
+4. Установите игры консольной командой: npm link<br>
+5. Игры готовы к запуску.<br>
+<br>
 
-Список игр:
-1. brain-even
-2. brain-calc
-3. brain-gcd
-4. brain-progression
-5. brain-prime
+[![asciicast](https://asciinema.org/a/zOifZTojMU0rAgBlVJdirlYUL.svg)](https://asciinema.org/a/zOifZTojMU0rAgBlVJdirlYUL)
+<br> <br>
+<h3><b>Процесс запуска:</b></h3>
+1. Впишите название выбранной игры в терминал.<br>
+<br>
+<h3><b>Примеры запуска игр:</b></h3>
 
-Процесс установки:
-1. Установите Node.js
-2. Скопируйте файлы с репозитория в удобное место.
-3. Установите зависимости проекта консольной командой: make install
-4. Установите игры консольной командой: npm link
-5. Игры готовы к запуску.
+1. brain-even<br>
+[![asciicast](https://asciinema.org/a/cvWlD9bR5Zw3o2WVXGvtb8vA0.svg)](https://asciinema.org/a/cvWlD9bR5Zw3o2WVXGvtb8vA0)<br>
 
+2. brain-calc<br>
+[![asciicast](https://asciinema.org/a/h1wR0gxtBHxBqFwIzi5vAZztV.svg)](https://asciinema.org/a/h1wR0gxtBHxBqFwIzi5vAZztV)<br>
 
+3. brain-gcd<br>
+[![asciicast](https://asciinema.org/a/ukFB0A9iL7G6rqypgEOBxws1B.svg)](https://asciinema.org/a/ukFB0A9iL7G6rqypgEOBxws1B)<br>
 
-Процесс запуска:
-1. Впишите название выбранной игры в терминал.
+4. brain-progression<br>
+[![asciicast](https://asciinema.org/a/2HN00nKOJvcUY2nxaKJmsV1aH.svg)](https://asciinema.org/a/2HN00nKOJvcUY2nxaKJmsV1aH)<br>
 
-Примеры запуска игр:
+5. brain-prime<br>
+[![asciicast](https://asciinema.org/a/trjDZpccCQgO5ayk5ktHZ3ePr.svg)](https://asciinema.org/a/trjDZpccCQgO5ayk5ktHZ3ePr)<br>
 
-1. brain-even
-[![asciicast](https://asciinema.org/a/cvWlD9bR5Zw3o2WVXGvtb8vA0.svg)](https://asciinema.org/a/cvWlD9bR5Zw3o2WVXGvtb8vA0)
+<h3><b>Пример проигрыша:</b></h3>
 
-2. brain-calc
-[![asciicast](https://asciinema.org/a/h1wR0gxtBHxBqFwIzi5vAZztV.svg)](https://asciinema.org/a/h1wR0gxtBHxBqFwIzi5vAZztV)
-
-3. brain-gcd
-[![asciicast](https://asciinema.org/a/ukFB0A9iL7G6rqypgEOBxws1B.svg)](https://asciinema.org/a/ukFB0A9iL7G6rqypgEOBxws1B)
-
-4. brain-progression
-[![asciicast](https://asciinema.org/a/2HN00nKOJvcUY2nxaKJmsV1aH.svg)](https://asciinema.org/a/2HN00nKOJvcUY2nxaKJmsV1aH)
-
-5. brain-prime
-[![asciicast](https://asciinema.org/a/trjDZpccCQgO5ayk5ktHZ3ePr.svg)](https://asciinema.org/a/trjDZpccCQgO5ayk5ktHZ3ePr)
+[![asciicast](https://asciinema.org/a/ZpC1sjxlvRGzW68HY4PyFtkcT.svg)](https://asciinema.org/a/ZpC1sjxlvRGzW68HY4PyFtkcT)
 
 
 
