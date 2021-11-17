@@ -3,11 +3,19 @@ import getRandomInt from '../random-num.js';
 const rule = 'Find the greatest common divisor of given numbers.';
 const questions = [];
 const corrects = [];
-const getGcd = (bigger, smaller) => {
-  if (bigger % smaller === 0) {
-    return smaller;
+
+const getGcd = (num1, num2) => {
+  let result = '';
+  let t = 0;
+  let a = num1;
+  let b = num2;
+  while (b !== 0) {
+    t = b;
+    b = a % b;
+    a = t;
   }
-  return getGcd(smaller, bigger % smaller);
+  result = t.toString();
+  return result;
 };
 
 for (let i = 0; i < 3; i += 1) {
