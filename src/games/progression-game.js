@@ -21,7 +21,7 @@ for (let i = 0; i < 3; i += 1) {
   row[missingItemID] = '..';
   let rowString = '';
   for (let j = 0; j < rowLength; j += 1) {
-    rowString += ` ${row[j]}`;
+    rowString = `${rowString + row[j]} `;
   }
   questions.push(rowString);
 }
