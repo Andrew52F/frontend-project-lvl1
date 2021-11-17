@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 
-import { greetings, name } from '../src/cli.js';
+import { greetings } from '../src/cli.js';
 import gameRules from '../src/index.js';
 import { rule, questions, corrects } from '../src/games/progression-game.js';
 
 greetings();
-gameRules(questions, corrects, rule, name);
+gameRules(questions, corrects, rule, greetings());
