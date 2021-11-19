@@ -18,10 +18,11 @@ const getQuestionStringRow = (row, missingItemID) => {
   const placeHolder = '..';
   let rowString = '';
   for (let i = 0; i < row.length; i += 1) {
-    if (i === missingItemID) {
+    if (missingItemID === i) {
       rowString = `${rowString + placeHolder} `;
+    } else {
+      rowString = `${rowString + row[i]} `;
     }
-    rowString = `${rowString + row[i]} `;
   }
   return rowString;
 };

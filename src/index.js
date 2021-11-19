@@ -14,7 +14,7 @@ const gameRules = (rule, getQuestionsAndCorrects) => {
     console.log(`Question: ${questionsAndCorrects[0]}`);
 
     if (debugMode) {
-      console.log(`Answer ${questionsAndCorrects[1]}, type ${typeof questionsAndCorrects[1]}`);
+      console.log(`Debug_Mode: Answer ${questionsAndCorrects[1]}, type ${typeof questionsAndCorrects[1]}`);
     }
 
     const answer = readlineSync.question('Your answer: ');
