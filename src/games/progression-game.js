@@ -1,13 +1,9 @@
 import getRandomInt from '../random-num.js';
 
 const rule = 'What number is missing in the progression?';
-const questions = [];
-const corrects = [];
-for (let i = 0; i < 3; i += 1) {
-  const row = [];
-  const rowLength = 5 + getRandomInt(5);
-  const differentiator = 1 + getRandomInt(4);
 
+const getRow = (rowLength, differentiator) => {
+  const row = [];
   for (let j = 0; j < rowLength; j += 1) {
     if (row.length === 0) {
       row.push(getRandomInt(100));
@@ -15,15 +11,31 @@ for (let i = 0; i < 3; i += 1) {
       row.push(row[j - 1] + differentiator);
     }
   }
+  return row;
+};
 
-  const missingItemID = getRandomInt(rowLength);
-  corrects.push(String(row[missingItemID]));
-  row[missingItemID] = '..';
+const getQuestionStringRow = (row, missingItemID) => {
+  const placeHolder = '..';
   let rowString = '';
-  for (let j = 0; j < rowLength; j += 1) {
-    rowString = `${rowString + row[j]} `;
+  for (let i = 0; i < row.length; i += 1) {
+    if (i === missingItemID) {
+      rowString = `${rowString + placeHolder} `;
+    }
+    rowString = `${rowString + row[i]} `;
   }
-  questions.push(rowString);
-}
+  return rowString;
+};
 
-export { rule, questions, corrects };
+const getQuestionsAndCorrects = () => {
+  const rowLength = 5 + getRandomInt(5);
+  const differentiator = 1 + getRandomInt(4);
+  const missingItemID = getRandomInt(rowLength);
+
+  const row = getRow(rowLength, differentiator);
+
+  const correct = String(row[missingItemID]);
+  const question = getQuestionStringRow(row, missingItemID);
+  return [question, correct];
+};
+
+export { rule, getQuestionsAndCorrects };

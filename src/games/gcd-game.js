@@ -1,8 +1,6 @@
 import getRandomInt from '../random-num.js';
 
 const rule = 'Find the greatest common divisor of given numbers.';
-const questions = [];
-const corrects = [];
 
 const getGcd = (num1, num2) => {
   let result = '';
@@ -18,20 +16,17 @@ const getGcd = (num1, num2) => {
   return result;
 };
 
-for (let i = 0; i < 3; i += 1) {
-  let bigger;
-  let smaller;
+const getQuestionsAndCorrects = () => {
   const number1 = getRandomInt(100);
   const number2 = getRandomInt(100);
-  if (number1 > number2) {
-    bigger = number1;
-    smaller = number2;
-  } else {
-    bigger = number2;
-    smaller = number1;
-  }
-  questions.push(`${number1} ${number2}`);
-  corrects.push(String(getGcd(bigger, smaller)));
-}
 
-export { rule, questions, corrects };
+  const bigger = (number1 > number2) ? number1 : number2;
+  const smaller = (number1 > number2) ? number2 : number1;
+
+  const question = `${number1} ${number2}`;
+  const correct = String(getGcd(bigger, smaller));
+
+  return [question, correct];
+};
+
+export { rule, getQuestionsAndCorrects };

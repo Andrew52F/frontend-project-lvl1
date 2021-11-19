@@ -1,11 +1,13 @@
 import getRandomInt from '../random-num.js';
 
 const rule = 'Answer "yes" if the number is even, otherwise answer "no".';
-const questions = [];
-const corrects = [];
-for (let i = 0; i < 3; i += 1) {
+
+const isEven = (number) => ((number % 2 === 0) ? 'yes' : 'no');
+
+const getQuestionsAndCorrects = () => {
   const number = getRandomInt(100);
-  questions.push(number);
-  corrects.push((number % 2 === 0) ? 'yes' : 'no');
-}
-export { rule, questions, corrects };
+  const question = number;
+  const correct = isEven(number);
+  return [question, correct];
+};
+export { rule, getQuestionsAndCorrects };
