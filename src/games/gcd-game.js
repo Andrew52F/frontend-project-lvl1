@@ -17,8 +17,8 @@ const getGcd = (num1, num2) => {
 };
 
 const getQuestionsAndCorrects = () => {
-  const number1 = getRandomInt(100);
-  const number2 = getRandomInt(100);
+  const number1 = 1 + getRandomInt(99);
+  const number2 = 1 + getRandomInt(99);
 
   const bigger = (number1 > number2) ? number1 : number2;
   const smaller = (number1 > number2) ? number2 : number1;
