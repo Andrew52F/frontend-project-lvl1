@@ -1,6 +1,6 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/Andrew52F/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/Andrew52F/frontend-project-lvl1/actions)
-<a href="https://codeclimate.com/github/codeclimate/codeclimate/maintainability"><img src="https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability" /></a>
+[![Maintainability](https://api.codeclimate.com/v1/badges/73f47821c331f4d6090e/maintainability)](https://codeclimate.com/github/Andrew52F/frontend-project-lvl1/maintainability)
 ![example workflow](https://github.com/Difuster/frontend-project-lvl1/actions/workflows/linter.yml/badge.svg)
 
 На этом репозитории располагается первый учебный проект на JavaScript - <b>"Игры разума"</b>.<br>
