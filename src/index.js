@@ -1,21 +1,15 @@
 import readlineSync from 'readline-sync';
+import greetings from './cli.js';
 
-const debugMode = false;
-const rounds = 3;
+const roundsCount = 3;
 
 const gameRules = (rule, getQuestionsAndCorrects) => {
-  console.log('Welcome to the Brain Games!');
-  const name = readlineSync.question('May I have your name? ');
-  console.log(`Hello, ${name}!`);
+  const name = greetings();
 
   console.log(rule);
-  for (let i = 0; i < rounds; i += 1) {
+  for (let i = 0; i < roundsCount; i += 1) {
     const questionsAndCorrects = getQuestionsAndCorrects();
     console.log(`Question: ${questionsAndCorrects[0]}`);
-
-    if (debugMode) {
-      console.log(`Debug_Mode: Answer ${questionsAndCorrects[1]}, type ${typeof questionsAndCorrects[1]}`);
-    }
 
     const answer = readlineSync.question('Your answer: ');
 

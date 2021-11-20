@@ -1,42 +1,30 @@
 import getRandomInt from '../random-num.js';
+import gameRules from '../index.js';
 
 const rule = 'What number is missing in the progression?';
 
-const getRow = (rowLength, differentiator) => {
-  const row = [];
-  for (let j = 0; j < rowLength; j += 1) {
-    if (row.length === 0) {
-      row.push(getRandomInt(100));
-    } else {
-      row.push(row[j - 1] + differentiator);
-    }
+const getProgression = (firstItem, differentiator, progressionLength) => {
+  const progression = [firstItem];
+  for (let i = 1; i < progressionLength; i += 1) {
+    progression.push(firstItem + differentiator * i);
   }
-  return row;
-};
-
-const getQuestionStringRow = (row, missingItemID) => {
-  const placeHolder = '..';
-  let rowString = '';
-  for (let i = 0; i < row.length; i += 1) {
-    if (missingItemID === i) {
-      rowString = `${rowString + placeHolder} `;
-    } else {
-      rowString = `${rowString + row[i]} `;
-    }
-  }
-  return rowString;
+  return progression;
 };
 
 const getQuestionsAndCorrects = () => {
-  const rowLength = 5 + getRandomInt(5);
-  const differentiator = 1 + getRandomInt(4);
-  const missingItemID = getRandomInt(rowLength);
-
-  const row = getRow(rowLength, differentiator);
-
-  const correct = String(row[missingItemID]);
-  const question = getQuestionStringRow(row, missingItemID);
+  const progressionLength = getRandomInt(5, 10);
+  const firstItem = getRandomInt(0, 100);
+  const differentiator = getRandomInt(1, 5);
+  const progression = getProgression(firstItem, differentiator, progressionLength);
+  const missingItemID = getRandomInt(0, progressionLength - 1);
+  const correct = String(progression[missingItemID]);
+  progression[missingItemID] = '..';
+  const question = progression.join(' ');
   return [question, correct];
 };
 
-export { rule, getQuestionsAndCorrects };
+const progressionStart = () => {
+  gameRules(rule, getQuestionsAndCorrects);
+};
+
+export default progressionStart;
